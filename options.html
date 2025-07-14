@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hintergrund einstellen</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+	<h1>Einstellungen</h1>
+
+	<h3>Linkverhalten wählen</h3>
+	<label>
+	  <input type="checkbox" id="openInNewTab" />
+	  Links in neuem Tab öffnen
+	</label>
+
+	<h3>Aussehen</h3>
+	<label>
+	  <input type="checkbox" id="themeToggle"> Dunkles Design
+	</label>
+
+	<h3>Hintergrundbild wählen</h3>
+	<input type="text" id="backgroundUrlInput" placeholder="Bild-URL oder base64" style="width: 100%;" />
+	<button id="saveUrlBtn">Speichern</button>
+	<br><br>
+	<label>Lokales Bild hochladen:
+	  <input type="file" id="backgroundFileInput" accept="image/*" />
+	</label>
+	<br><br>
+	<button id="deleteImageBtn">Löschen</button>
+
+	<img id="preview" alt="Vorschau wird hier angezeigt..." />
+	<script src="options.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: Verdana, 'Open Sans', Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.dark { color:#eee; }
+
+#bookmarks {
+  column-gap: 20px;
+}
+
+@media (max-width: 800px) {
+  #bookmarks {
+	column-count: 3;  
+  }
+}
+
+@media (min-width: 800px) {
+  #bookmarks {
+      column-count: 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  #bookmarks {
+      column-count: 7;
+  }
+}
+
+@media (min-width: 2000px) {
+  #bookmarks {
+      column-count: 9;
+  }
+}
+
+/* Ganz wichtig: Keine feste Höhe! */
+.folder {
+  background-color: rgba(255,255,255,0.92);
+  border-radius: 5px;
+  padding: 0px 0px 5px 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+body.dark .folder {
+  background-color: rgba(40,40,40,0.92);
+  box-shadow: 0 0 10px rgba(192,192,192,0.7);
+}
+
+.folder > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight:750;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 5px 7px 10px;
+  color: #aaa;
+  border-radius: 5px 5px 0px 0px;
+  background-color:#eee;
+  text-shadow: 1px 1px #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;  
+}
+
+body.dark .folder > h3 {
+  border-bottom: 1px solid #444;
+  color: #666;
+  background-color:#111;
+  text-shadow: 0.5px 0.5px #999;
+}
+
+.folder h3:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+body.dark .folder h3:hover {
+  background-color: rgba(0, 0, 0, 0.05); 
+}
+
+.folder a {
+  margin:0px 5px 0px 10px;
+  padding:4px;
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+body.dark .folder a {
+  color: #ddd;
+}
+
+.folder a:hover {
+  color: #ff5500;
+}
+
+body.dark .folder a:hover {
+  color: #0088aa;
+}
+
+.folder img.favicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+#open-options {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255,255,255,0.45);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: background-color 0.2s ease;
+}
+
+body.dark #open-options {
+  background-color: rgba(0,0,0,0.45);
+  color: #aaa;
+  box-shadow: 0 0 5px rgba(100,100,100,0.3);
+}
+
+#open-options:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+body.dark #open-options:hover {
+  background-color: rgba(20,20,20,1);
+}

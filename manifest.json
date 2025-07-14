@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Bookolino",
+  "version": "0.2",
+  "browser_specific_settings": {
+    "gecko": {
+	  "id": "mail@thomashucke.de"
+    }
+  },
+  "host_permissions": ["<all_urls>"],  
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage", "bookmarks", "activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },  
+  "web_accessible_resources": [
+    {
+      "resources": ["background.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
