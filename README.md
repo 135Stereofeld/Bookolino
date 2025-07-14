@@ -11,5 +11,6 @@ Die Erweiteerung ist bei Google eingereicht, aber noch nicht veröffentlicht. We
 
 Bookolino richtet sich dann als New-Tab ein. Das heißt jeder Tab zeigt die Lesezeichen an. Auf der Seiten unten rechts lassen sich ein paar Optionen (Hintergrundbild, Darkmode, Linkverhalten) einstellen.
 
+![Screenshot02](https://github.com/135Stereofeld/Bookolino/blob/main/_Brand/Screenshot02.jpg)
 
 Viel Spaß damit.
