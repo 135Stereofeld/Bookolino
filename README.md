@@ -16,3 +16,5 @@ Bookolino richtet sich dann als New-Tab ein. Das heißt jeder Tab zeigt die Lese
 ![Screenshot02](https://github.com/135Stereofeld/Bookolino/blob/main/_Brand/Screenshot02.jpg)
 
 Viel Spaß damit.
+
+P.S.: Falls dir die Erweiterung gefällt, spendiere mir gerne einen Apfelwein: https://paypal.me/thomashucke74
