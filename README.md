@@ -3,7 +3,7 @@ Google-Chrome Erweiterung
 
 ![Logo](https://github.com/135Stereofeld/Bookolino/blob/main/_Brand/symbol.png)
 
-Du hast viele Lesezeichen (Bookmarks) und möchtest Zugriff zu jeder beliebigen Website, Anwendung, Applikation oder Site aus deinen Lesezeichen. Ganz einfach. Mit dieser Erweiterung habst du jetzt alle Lesezeichen immer vor Augen direkt beim Öffnen des Browsers.
+Du hast viele Lesezeichen (Bookmarks) und möchtest Zugriff zu jeder beliebigen Website, Anwendung, Applikation oder Site aus deinen Lesezeichen. Ganz einfach. Mit dieser Erweiterung hast du jetzt alle Lesezeichen immer vor Augen direkt beim Öffnen des Browsers.
 
 ![Screenshot01](https://github.com/135Stereofeld/Bookolino/blob/main/_Brand/Screenshot01.jpg)
 
