@@ -17,4 +17,4 @@ Bookolino richtet sich dann als New-Tab ein. Das heißt jeder Tab zeigt die Lese
 
 Viel Spaß damit.
 
-P.S.: Falls dir die Erweiterung gefällt, spendiere mir gerne einen Apfelwein: https://paypal.me/thomashucke74
+P.S.: Falls dir die Erweiterung gefällt, spendiere mir gerne einen  [Apfelwein](https://frankfurterhof.com/restaurant/speisen--amp--getraenke/getraenke.php) : https://paypal.me/thomashucke74
