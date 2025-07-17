@@ -11,7 +11,7 @@
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-  "permissions": ["storage", "bookmarks", "activeTab", "tabs"],
+  "permissions": ["storage", "bookmarks", "tabs"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
