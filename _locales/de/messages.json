@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "Bookolino"
+  },
+  "extDescription": {
+    "message": "Zeigt Lesezeichen im neuen Tab an."
+  },
+  "labelNewTab": {
+    "message": "Meine Favoriten"
+  },
+  "labelSettingTab": {
+    "message": "Einstellungen"
+  },
+  "labelSettings": {
+    "message": "Einstellungen"
+  },
+  "labelLinkBehavior": {
+    "message": "Linkverhalten"
+  },
+  "labelOpenInNewTab": {
+    "message": "Links in neuem Tab öffnen"
+  },
+  "labelLayout": {
+    "message": "Aussehen"
+  },
+  "labelDarkTheme": {
+    "message": "Dunkles Design"
+  },
+  "labelBackground": {
+    "message": "Hintergrundbild wählen"
+  },
+  "labelSaveBtn": {
+    "message": "Speichern"
+  },
+  "labelDeleteBtn": {
+    "message": "Löschen"
+  },
+  "labelUploadImage": {
+  "message": "Lokales Bild hochladen"
+  },
+  "InfoBoxImagesDeleted": {
+  "message": "Hintergrundbild wurde gelöscht."
+  }
+}

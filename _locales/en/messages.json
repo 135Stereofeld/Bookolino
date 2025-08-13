@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "Bookolino"
+  },
+  "extDescription": {
+    "message": "Displays bookmarks on the new tab page."
+  },
+ "labelNewTab": {
+    "message": "My Bookmarks"
+  },
+  "labelSettingTab": {
+    "message": "Settings"
+  },  
+  "labelSettings": {
+    "message": "Settings"
+  },
+  "labelLinkBehavior": {
+    "message": "Link behavior"
+  },
+  "labelOpenInNewTab": {
+    "message": "Open links in new tab"
+  },
+  "labelLayout": {
+    "message": "Layout"
+  },
+  "labelDarkTheme": {
+    "message": "Dark theme"
+  },
+  "labelBackground": {
+    "message": "Choose background image"
+  },
+  "labelSaveBtn": {
+    "message": "Save"
+  },
+  "labelDeleteBtn": {
+    "message": "Delete"
+  },
+  "labelUploadImage": {
+  "message": "Upload local image"
+  },
+  "InfoBoxImagesDeleted": {
+  "message": "Background Image deleted."  
+  }
+}

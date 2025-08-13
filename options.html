@@ -2,35 +2,36 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Hintergrund einstellen</title>
+  <title data-i18n="labelSettings"></title>
   <link rel="stylesheet" href="options.css" />
 </head>
 <body>
-	<h1>Einstellungen</h1>
+	<h1 data-i18n="labelSettings"></h1>
 
-	<h3>Linkverhalten wählen</h3>
+	<h3 data-i18n="labelLinkBehavior"></h3>
 	<label>
 	  <input type="checkbox" id="openInNewTab" />
-	  Links in neuem Tab öffnen
+	  <span data-i18n="labelOpenInNewTab"></span>
 	</label>
 
-	<h3>Aussehen</h3>
+	<h3 data-i18n="labelLayout"></h3>
 	<label>
-	  <input type="checkbox" id="themeToggle"> Dunkles Design
+	  <input type="checkbox" id="themeToggle"> <span data-i18n="labelDarkTheme"></span>
 	</label>
 
-	<h3>Hintergrundbild wählen</h3>
-	<input type="text" id="backgroundUrlInput" placeholder="Bild-URL oder base64" style="width: 100%;" />
-	<button id="saveUrlBtn">Speichern</button>
+	<h4 data-i18n="labelBackground"></h4>
+	<input type="text" id="backgroundUrlInput" placeholder="URL" style="width: 100%;" />
+	<button id="saveUrlBtn" data-i18n="labelSaveBtn"></button>
 	<br><br>
-	<label>Lokales Bild hochladen:
+	<label><span data-i18n="labelUploadImage"></span>
 	  <input type="file" id="backgroundFileInput" accept="image/*" />
 	</label>
 	<br><br>
-	<button id="deleteImageBtn">Löschen</button>
+	<button id="deleteImageBtn" data-i18n="labelDeleteBtn"></button>
 
-	<img id="preview" alt="Vorschau wird hier angezeigt..." />
+	<img id="preview" alt="" />
 	<script src="options.js"></script>
+    <script src="translate.js"></script>	
 
 </body>
 </html>

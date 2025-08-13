@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       preview.src = '';
       backgroundUrlInput.value = '';
       backgroundFileInput.value = '';
-      alert('Hintergrundbild wurde gelöscht.');
+	  const infobox = chrome.i18n.getMessage("InfoBoxImagesDeleted");
+      alert(infobox);
     });
   });
 

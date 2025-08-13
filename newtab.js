@@ -127,7 +127,6 @@ async function renderFolder(node, container) {
   container.appendChild(folderDiv);
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
   chrome.storage.local.get(['backgroundImage'], (result) => {
     const bgUrl = result.backgroundImage || 'background.jpg'; // Fallback
@@ -162,8 +161,6 @@ chrome.storage.local.get(['backgroundImage'], (result) => {
     }
   });
 });
-
-
 
 document.getElementById('open-options')?.addEventListener('click', () => {
   chrome.runtime.openOptionsPage();
