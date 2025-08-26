@@ -3,10 +3,11 @@
   "default_locale": "de",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
-  "version": "0.5",
+  "version": "0.7",
   "browser_specific_settings": {
     "gecko": {
-	  "id": "mail@thomashucke.de"
+	   "id": "bookolino@thomashucke.de",
+       "strict_min_version": "109.0"
     }
   },
   "host_permissions": ["<all_urls>"],  

@@ -67,7 +67,10 @@ body.dark .folder {
   background-color:#eee;
   text-shadow: 1px 1px #fff;
   cursor: pointer;
-  transition: background-color 0.2s ease;  
+  transition: background-color 0.2s ease; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 body.dark .folder > h3 {
@@ -148,4 +151,15 @@ body.dark #open-options {
 
 body.dark #open-options:hover {
   background-color: rgba(20,20,20,1);
+}
+
+/* Trenner in Ordner-Boxen */
+.separator {
+  border-top: 1px solid rgba(0, 0, 0, 0.10);
+  margin: 8px 0;
+}
+
+/* Dark Mode */
+body.dark .separator {
+  border-top-color: rgba(255, 255, 255, 0.3);
 }

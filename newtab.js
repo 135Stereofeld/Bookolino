@@ -98,34 +98,47 @@ async function createBookmarkElement(bookmark) {
   return link;
 }
 
+function createSeparatorElement() {
+  const sep = document.createElement('div');
+  sep.className = 'separator';
+  sep.setAttribute('role', 'separator');
+  return sep;
+}
+
 
 async function renderFolder(node, container) {
   const folderDiv = document.createElement('div');
   folderDiv.className = 'folder';
 
   const folderTitle = document.createElement('h3');
-  folderTitle.textContent = node.title || '📁 Ordner';
+  folderTitle.textContent = node.title || '📁 ' + (chrome.i18n?.getMessage('folder') || 'Ordner');
 
-  // Klick-Event: Alle Links im Ordner öffnen
+  // Klick: alle Links im Ordner öffnen (Separatoren werden ignoriert)
   folderTitle.addEventListener('click', () => {
     for (const child of node.children) {
       if (child.url) {
-		chrome.tabs.create({ url: child.url, active: false });
+        chrome.tabs.create({ url: child.url, active: false });
       }
     }
   });
-  
+
   folderDiv.appendChild(folderTitle);
 
   for (const child of node.children) {
+    // NEU: Separatoren in Firefox darstellen
+    if (child.type === 'separator') {
+      folderDiv.appendChild(createSeparatorElement());
+      continue;
+    }
     if (child.url) {
-      const bookmarkEl = await createBookmarkElement(child);  // ← wartet auf favicon
+      const bookmarkEl = await createBookmarkElement(child);
       folderDiv.appendChild(bookmarkEl);
     }
   }
 
   container.appendChild(folderDiv);
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   chrome.storage.local.get(['backgroundImage'], (result) => {
@@ -171,3 +184,7 @@ chrome.storage.local.get(['theme'], (result) => {
     document.body.classList.add('dark');
   }
 });
+
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
