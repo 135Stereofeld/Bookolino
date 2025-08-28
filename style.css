@@ -1,3 +1,4 @@
+/* Grundlayout */
 body {
   margin: 0;
   padding: 50px;
@@ -7,8 +8,11 @@ body {
   color: #222;
 }
 
-body.dark { color:#eee; }
+body.dark {
+  color: #eee;
+}
 
+/* Grid für Folder */
 #bookmarks {
   column-gap: 20px;
 }
@@ -37,7 +41,7 @@ body.dark { color:#eee; }
   }
 }
 
-/* Ganz wichtig: Keine feste Höhe! */
+/* Folder-Box */
 .folder {
   background-color: rgba(255,255,255,0.92);
   border-radius: 5px;
@@ -55,16 +59,17 @@ body.dark .folder {
   box-shadow: 0 0 10px rgba(192,192,192,0.7);
 }
 
+/* Folder-Header */
 .folder > h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;  
   font-size: 0.9rem;
-  font-weight:750;
+  font-weight: 750;
   border-bottom: 1px solid #ddd;
   padding: 10px 5px 7px 10px;
   color: #aaa;
-  border-radius: 5px 5px 0px 0px;
-  background-color:#eee;
+  border-radius: 5px 5px 0 0;
+  background-color: #eee;
   text-shadow: 1px 1px #fff;
   cursor: pointer;
   transition: background-color 0.2s ease; 
@@ -76,7 +81,7 @@ body.dark .folder {
 body.dark .folder > h3 {
   border-bottom: 1px solid #444;
   color: #666;
-  background-color:#111;
+  background-color: #111;
   text-shadow: 0.5px 0.5px #999;
 }
 
@@ -88,9 +93,10 @@ body.dark .folder h3:hover {
   background-color: rgba(0, 0, 0, 0.05); 
 }
 
+/* Bookmark-Links */
 .folder a {
-  margin:0px 5px 0px 10px;
-  padding:4px;
+  margin: 0px 5px 0px 10px;
+  padding: 4px;
   display: flex;
   align-items: center;
   max-width: 85%;
@@ -116,6 +122,7 @@ body.dark .folder a:hover {
   color: #0088aa;
 }
 
+/* Favicons */
 .folder img.favicon {
   width: 16px;
   height: 16px;
@@ -123,6 +130,7 @@ body.dark .folder a:hover {
   flex-shrink: 0;
 }
 
+/* Options-Button */
 #open-options {
   position: fixed;
   bottom: 20px;
@@ -153,13 +161,33 @@ body.dark #open-options:hover {
   background-color: rgba(20,20,20,1);
 }
 
-/* Trenner in Ordner-Boxen */
+/* Separator-Linien */
 .separator {
   border-top: 1px solid rgba(0, 0, 0, 0.10);
   margin: 8px 0;
 }
 
-/* Dark Mode */
 body.dark .separator {
   border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Drag & Drop */
+.bookmark-link.drag-over {
+  border-top: 2px solid dodgerblue;
+}
+
+h3.drag-over-folder {
+  background-color: rgba(30, 144, 255, 0.2);
+  border: 2px dashed dodgerblue;
+  border-radius: 6px;
+}
+
+.folder.drop-before {
+  border-top: 4px solid #0078d7;
+  margin-top: 16px;
+}
+
+.folder.drop-after {
+  border-bottom: 4px solid #0078d7;
+  margin-bottom: 16px;
 }

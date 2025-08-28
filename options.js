@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Open in new tab
   chrome.storage.local.get(['openInNewTab'], (result) => {
-    openInNewTabCheckbox.checked = result.openInNewTab ?? true; // Default true
+    openInNewTabCheckbox.checked = result.openInNewTab ?? false; // Default false
   });
   openInNewTabCheckbox.addEventListener('change', (e) => {
     chrome.storage.local.set({ openInNewTab: e.target.checked });
