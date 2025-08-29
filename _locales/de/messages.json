@@ -23,6 +23,9 @@
   "labelLayout": {
     "message": "Aussehen"
   },
+  "labelColumns": {
+    "message": "Anzahl Spalten"
+  },
   "labelDarkTheme": {
     "message": "Dunkles Design"
   },

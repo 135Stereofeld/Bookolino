@@ -6,6 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const deleteImageBtn = document.getElementById('deleteImageBtn');
   const openInNewTabCheckbox = document.getElementById('openInNewTab');
   const themeToggle = document.getElementById('themeToggle');
+  const columnsSelect = document.getElementById("setColumns");
+  const saveColumnsBtn = document.getElementById("saveColumns");
+
+  // Anzahl Salten
+  chrome.storage.local.get(["columns"], (result) => {
+    if (result.columns) {
+      columnsSelect.value = result.columns;
+    } else {
+      columnsSelect.value = "auto";
+    }
+  });
+
+  saveColumnsBtn.addEventListener("click", () => {
+    const value = columnsSelect.value;
+    chrome.storage.local.set({ columns: value });
+  });
+
 
   // Vorhandenes Bild laden
   chrome.storage.local.get(['backgroundImage'], (result) => {
@@ -46,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Open in new tab
   chrome.storage.local.get(['openInNewTab'], (result) => {
-    openInNewTabCheckbox.checked = result.openInNewTab ?? false; // Default false
+    openInNewTabCheckbox.checked = result.openInNewTab ?? true; // Default false
   });
   openInNewTabCheckbox.addEventListener('change', (e) => {
     chrome.storage.local.set({ openInNewTab: e.target.checked });

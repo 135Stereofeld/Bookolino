@@ -41,6 +41,10 @@ body.dark {
   }
 }
 
+#bookmarks.fixed-columns {
+  column-gap: 20px;
+}
+
 /* Folder-Box */
 .folder {
   background-color: rgba(255,255,255,0.92);

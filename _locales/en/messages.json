@@ -23,6 +23,9 @@
   "labelLayout": {
     "message": "Layout"
   },
+  "labelColumns": {
+    "message": "Number of Columns"
+  },  
   "labelDarkTheme": {
     "message": "Dark theme"
   },

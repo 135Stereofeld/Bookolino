@@ -229,6 +229,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (result.theme === 'dark') document.body.classList.add('dark');
   });
 
+// Spalten
+chrome.storage.local.get(["columns"], (result) => {
+  const bookmarksContainer = document.getElementById("bookmarks");
+
+  if (!result.columns || result.columns === "auto") {
+	// Automatisch: nichts ändern, CSS mit media queries übernimmt
+	bookmarksContainer.classList.remove("fixed-columns");
+  } else {
+	// feste Spaltenzahl
+	bookmarksContainer.classList.add("fixed-columns");
+	bookmarksContainer.style.columnCount = result.columns;
+  }
+});
+
   // Options
   document.getElementById('open-options')?.addEventListener('click', () => {
     chrome.runtime.openOptionsPage();
