@@ -94,8 +94,8 @@ async function createBookmarkElement(bookmark) {
       if (!dragged || !target) return;
 
       let destIndex = target.index;
-      if (dragged.parentId === target.parentId && dragged.index < destIndex) destIndex -= 1;
-
+      if (dragged.parentId === target.parentId && dragged.index < destIndex) destIndex += 0;
+	  else destIndex += 0
       await chrome.bookmarks.move(draggedBookmarkId, { parentId: target.parentId, index: destIndex });
       location.reload();
     } catch (err) {

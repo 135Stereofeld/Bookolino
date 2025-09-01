@@ -2,6 +2,8 @@
 Google-Chrome Erweiterung
 
 # Version History
+1.0 First official release
+0.12 Fix Drag & Drop of Links
 0.11 Number of Columns changable
 0.10 Display error in Firefox solved
 0.9 Icons added, Display error in Firefox solved
