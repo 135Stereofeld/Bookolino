@@ -2,6 +2,8 @@
 Google-Chrome Erweiterung
 
 # Version History
+1.2 Fix manifest.json to fullfill requirements for "safe browsing"
+1.1 Fix Drag & Drop of Links
 1.0 First official release
 0.12 Fix Drag & Drop of Links
 0.11 Number of Columns changable

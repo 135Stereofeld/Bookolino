@@ -3,21 +3,24 @@
   "default_locale": "de",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
-  "version": "1.0",
+  "version": "1.2",
   "browser_specific_settings": {
     "gecko": {
 	   "id": "bookolino@thomashucke.de",
        "strict_min_version": "109.0"
     }
   },
-  "host_permissions": ["<all_urls>"],  
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "host_permissions": ["https://www.google.com/*"],  
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
   "permissions": ["storage", "bookmarks"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://www.google.com/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
@@ -36,7 +39,7 @@
   "web_accessible_resources": [
     {
       "resources": ["background.jpg"],
-      "matches": ["<all_urls>"]
+      "matches": ["chrome-extension://*/*"]
     }
   ]
 }
